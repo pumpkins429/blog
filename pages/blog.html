@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>详情</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css"
+        data-filtered="filtered">
+    <link rel="stylesheet" href="../static/css/me.css">
+</head>
+
+<body>
+    <!-- 导航 -->
+    <nav class="ui inverted attached segment m-padded-tb-mini">
+        <div class="ui inverted secondary stackable menu">
+            <!-- 图标 -->
+            <h2 class="ui teal header item">Blog</h2>
+            <a href="#" class="m-item item m-mobile-hide"><i class="small home icon"></i>首页</a>
+            <a href="#" class="m-item item m-mobile-hide"><i class="small idea icon"></i>分类</a>
+            <a href="#" class="m-item item m-mobile-hide"><i class="small tags icon"></i>标签</a>
+            <a href="#" class="m-item item m-mobile-hide"><i class="small clone icon"></i>归档</a>
+            <a href="#" class="m-item item m-mobile-hide"><i class="small info icon"></i>关于我</a>
+            <a href="./pages/test.html" class="m-item item m-mobile-hide"><i class="small info icon"></i>test</a>
+            <a href="./pages/yulin.html" class="m-item item m-mobile-hide"><i class="small info icon"></i>yulin</a>
+            <div class="right m-item item m-mobile-hide">
+                <div class="ui icon transparent inverted input">
+                    <input type="text" placeholder="搜索">
+                    <i class="search link icon"></i>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="ui menu toggle black icon button m-right-top m-mobile-show">
+            <i class="sidebar icon"></i>
+        </a>
+    </nav>
+    <!-- 中间博客 -->
+    <main class="m-container-small m-padded-tb-big">
+        <!-- container有响应式效果 -->
+        <div class="ui container">
+            <!-- 头部 -->
+            <div class="ui top attached segment">
+
+            </div>
+            <!-- 图片区域 -->
+            <div class="ui attached segment">
+                
+            </div>
+            <!-- 内容 -->
+            <div class="ui attached segment">
+
+            </div>
+            <!-- 博客信息 -->
+            <div class="ui attached positive message">
+
+            </div>
+            <!-- 留言区域，加bottom有圆角 -->
+            <div class="ui bottom attached segment">
+
+            </div>
+        </div>
+    </main>
+    <!-- 底部footer -->
+    <footer class="ui inverted vertical segment m-padded-tb-massive">
+        <!-- 布局 -->
+        <div class="ui center aligned container">
+            <!-- 默认分成16份，divider表示加上分割线 -->
+            <div class="ui inverted divided stackable grid">
+                <!-- 占3份，填满，一列 -->
+                <div class="three wide column">
+                    <div class="ui inverted link list">
+                        <div class="item">
+                            <img src="./static/images/wechat.jpg" class="ui rounded image small" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="three wide column">
+                    <h4 class="ui inverted header m-opacity-mini m-text-spaced">最新博客</h4>
+                    <div class="ui inverted link list">
+                        <a href="#" class="item">用户故事</a>
+                        <a href="#" class="item">SpringBoot入门案例</a>
+                        <a href="#" class="item">Linux常用命令</a>
+                    </div>
+                </div>
+                <div class="three wide column">
+                    <h4 class="ui inverted header m-opacity-mini m-text-spaced">联系我</h4>
+                    <div class="ui inverted link list">
+                        <a href="#" class="item">QQ邮箱:3187336730@qq.com</a>
+                        <a href="#" class="item">微信:liurunheng233</a>
+                    </div>
+                </div>
+                <div class="seven wide column">
+                    <h4 class="ui inverted header m-opacity-mini m-text-spaced">slogan</h4>
+                    <div class="ui inverted link list">
+                        <p class="m-opacity-mini m-text-spaced m-text-thin">be better be betterbe betterbe betterbe
+                            betterbe betterbe betterbe betterbe better</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 分割线 -->
+            <div class="ui inverted section divider"></div>
+
+            <p class="m-opacity-tiny m-text-thin m-text-lined m-text-spaced">Copyright © 2022 - 2022 lrh</p>
+
+        </div>
+
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+</body>
+<script>
+    // 点击展开或收起菜单
+    $('.menu.toggle').click(function () {
+        $('.m-item').toggleClass('m-mobile-hide');
+    })
+</script>
+
+</html>

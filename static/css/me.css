@@ -1,3 +1,14 @@
+body {
+    /* background: url("../images/bg/"); */
+    /* background: url("../images/bg/white_wall_hash.png"); */
+    background: url("../images/bg/pink-flowers.jpg");
+    /* background: url("../images/bg/leaves.png"); */
+}
+
+
+
+
+
 /* -----------padding------------ */
 /* 内边距设小，提高级别才能生效 */
 .m-padded-mini {
@@ -129,6 +140,10 @@
 .m-opacity-mini {
     opacity: 0.8 !important
 }
+/* .m-opacity-tiny { */
+    opacity: 0.6 !important
+}
+
 
 /* ---------display------------- */
 
@@ -140,6 +155,10 @@
 /* ------container------------ */
 .m-container {
     max-width: 72em !important;
+    margin: auto !important;
+}
+.m-container-small {
+    max-width: 60em !important;
     margin: auto !important;
 }
 
