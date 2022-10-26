@@ -90,7 +90,21 @@
                 </div>
                 <!-- 赞赏 -->
                 <div class="ui center aligned basic segment">
-                    <button class="ui orange basic circular button">赞赏</button>
+                    <button id="payButton" class="ui orange basic circular button">赞赏</button>
+                </div>
+                <div class="ui payQR flowing popup transition hidden">
+                    <div class="ui orange basic label">
+                        <div class="ui images" style="font-size: inherit;">
+                            <div class="image">
+                                <img src="../static/images/wechat.jpg" alt="" class="ui tiny rounded bordered image">
+                                <div>支付宝</div>
+                            </div>
+                            <div class="image">
+                                <img src="../static/images/wechat.jpg" alt="" class="ui tiny rounded bordered image">
+                                <div>微信</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <!-- 博客信息 -->
@@ -159,6 +173,13 @@
     $('.menu.toggle').click(function () {
         $('.m-item').toggleClass('m-mobile-hide');
     })
+
+    //赞赏，点击跳出弹窗
+    $('#payButton').popup({
+        popup : $('.payQR.popup'),
+        on : 'click',
+        position: 'top center'
+    });
 </script>
 
 </html>
