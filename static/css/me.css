@@ -68,7 +68,7 @@ body {
 }
 
 
-.m-padding-lr-responsive {
+.m-padded-lr-responsive {
     padding-left: 4em !important;
     padding-right: 4em !important;
 }
@@ -212,6 +212,13 @@ body {
         padding-left: 0 !important;
         padding-right: 0 !important;
     }
+
+    .m-mobile-lr-clear {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    
     /* 宽度 */
     .m-mobile-wide {
         width: 100% !important;

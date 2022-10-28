@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>分类</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css"
+        data-filtered="filtered">
+    <link rel="stylesheet" href="../static/css/me.css">
+</head>
+
+<body>
+    <!-- 导航 -->
+    <nav class="ui inverted attached segment m-padded-tb-mini">
+        <div class="ui inverted secondary stackable menu">
+            <!-- 图标 -->
+            <h2 class="ui teal header item">Blog</h2>
+            <a href="../index.html" class="m-item item m-mobile-hide"><i class="small home icon"></i>首页</a>
+            <a href="#" class="m-item item m-mobile-hide"><i class="small idea icon"></i>分类</a>
+            <a href="#" class="m-item item m-mobile-hide"><i class="small tags icon"></i>标签</a>
+            <a href="#" class="m-item item m-mobile-hide"><i class="small clone icon"></i>归档</a>
+            <a href="#" class="m-item item m-mobile-hide"><i class="small info icon"></i>关于我</a>
+            <a href="./pages/test.html" class="m-item item m-mobile-hide"><i class="small info icon"></i>test</a>
+            <a href="./pages/yulin.html" class="m-item item m-mobile-hide"><i class="small info icon"></i>yulin</a>
+            <div class="right m-item item m-mobile-hide">
+                <div class="ui icon transparent inverted input">
+                    <input type="text" placeholder="搜索">
+                    <i class="search link icon"></i>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="ui menu toggle black icon button m-right-top m-mobile-show">
+            <i class="sidebar icon"></i>
+        </a>
+    </nav>
+    <!-- 中间博客 -->
+    <main class="m-container-small m-padded-tb-big m-opacity-small">
+        <!-- container有响应式效果 -->
+        <div class="ui container">
+            <!-- 头部 -->
+            <div class="ui top attached segment">
+                <!-- middle+aligned垂直居中 -->
+                <div class="ui middle aligned two column grid">
+                    <div class="column">
+                        <h3 class="ui teal header">分类</h3>
+                    </div>
+                    <!-- right+aligned靠右 -->
+                    <div class="right aligned column">
+
+                        共<h2 class="ui orange header m-inline-block m-text-thin">&nbsp;10&nbsp;</h2>个
+                    </div>
+                </div>
+            </div>
+            <!-- 分类区域 -->
+            <div class="ui attached segment m-padded-tb-large">
+                <div class="ui labeled button m-margin-tb-tiny">
+                    <a href="#" class="ui basic teal button">思考与感悟</a>
+                    <div class="ui basic teal left pointing label">11</div>
+                </div>
+                <div class="ui labeled button m-margin-tb-tiny">
+                    <a href="#" class="ui basic button">思考与感悟</a>
+                    <div class="ui basic left pointing label">11</div>
+                </div>
+                <div class="ui labeled button m-margin-tb-tiny">
+                    <a href="#" class="ui basic button">笔记</a>
+                    <div class="ui basic left pointing label">11</div>
+                </div>
+                <div class="ui labeled button m-margin-tb-tiny">
+                    <a href="#" class="ui basic button">思考与感悟</a>
+                    <div class="ui basic left pointing label">11</div>
+                </div>
+                <div class="ui labeled button m-margin-tb-tiny">
+                    <a href="#" class="ui basic button">思考与感悟</a>
+                    <div class="ui basic left pointing label">11</div>
+                </div>
+                <div class="ui labeled button m-margin-tb-tiny">
+                    <a href="#" class="ui basic button">笔记</a>
+                    <div class="ui basic left pointing label">11</div>
+                </div>
+                <div class="ui labeled button m-margin-tb-tiny">
+                    <a href="#" class="ui basic button">笔记</a>
+                    <div class="ui basic left pointing label">11</div>
+                </div>
+                <div class="ui labeled button m-margin-tb-tiny">
+                    <a href="#" class="ui basic button">笔记</a>
+                    <div class="ui basic left pointing label">11</div>
+                </div>
+            </div>
+
+            <!-- 选中分类对应博客 -->
+            <!-- 设置vertical后如果后面还有同样的segment会自动分隔，且有分隔线 -->
+            <div class="ui top attached teal segment m-padded">
+                <div class="ui vertical segment m-padded-tb-large m-padded m-mobile-lr-clear">
+                    <!-- mobile reversed让grid布局反过来显示，即下面five中的图片自适应时放上面 -->
+                    <div class="ui mobile reversed stackable grid">
+                        <!-- 博文摘要 -->
+                        <div class="eleven wide column">
+                            <h3 class="ui header"><a href="./pages/blog.html">咖喱一定能去到她想去的地方</a></h3>
+                            <p class="m-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis,
+                                laboriosam cum
+                                itaque id tempore eius quibusdam, impedit nihil dolore expedita, ab eveniet
+                                omnis ipsam sed. A culpa at, delectus blanditiis similique ea eveniet maxime
+                                exercitationem quas vel cumque ab, pariatur ratione repellendus cum aperiam!
+                                Magnam harum deserunt adipisci ut rerum.</p>
+                            <div class="ui stackable grid">
+                                <div class="eleven wide column">
+                                    <!-- 水平horizontal -->
+                                    <div class="ui mini horizontal link list">
+                                        <div class="item">
+                                            <img src="https://fakeimg.pl/100x100/" alt="head_pic"
+                                                class="ui avatar image">
+                                            <div class="content"><a href="#" class="header">阿库</a></div>
+                                        </div>
+                                        <div class="item">
+                                            <i class="calendar icon"></i> 2022-10-25
+                                        </div>
+                                        <div class="item">
+                                            <i class="eye icon"></i> 10086
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="right aligned five wide column">
+                                    <a href="#" target="_blank"
+                                        class="ui teal basic label m-padded-tiny m-text-thin">认知升级</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 图片 -->
+                        <div class="five wide column">
+                            <a href="#" target="_blank">
+                                <img src="../static/images/blog_imgs/cover/cutePig.jpg" alt="blog_picture"
+                                    class="ui rounded image">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="ui vertical segment m-padded-tb-large m-padded m-mobile-lr-clear">
+                    <!-- mobile reversed让grid布局反过来显示，即下面five中的图片自适应时放上面 -->
+                    <div class="ui mobile reversed stackable grid">
+                        <!-- 博文摘要 -->
+                        <div class="eleven wide column">
+                            <h3 class="ui header"><a href="./pages/blog.html">咖喱一定能去到她想去的地方</a></h3>
+                            <p class="m-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis,
+                                laboriosam cum
+                                itaque id tempore eius quibusdam, impedit nihil dolore expedita, ab eveniet
+                                omnis ipsam sed. A culpa at, delectus blanditiis similique ea eveniet maxime
+                                exercitationem quas vel cumque ab, pariatur ratione repellendus cum aperiam!
+                                Magnam harum deserunt adipisci ut rerum.</p>
+                            <div class="ui stackable grid">
+                                <div class="eleven wide column">
+                                    <!-- 水平horizontal -->
+                                    <div class="ui mini horizontal link list">
+                                        <div class="item">
+                                            <img src="https://fakeimg.pl/100x100/" alt="head_pic"
+                                                class="ui avatar image">
+                                            <div class="content"><a href="#" class="header">阿库</a></div>
+                                        </div>
+                                        <div class="item">
+                                            <i class="calendar icon"></i> 2022-10-25
+                                        </div>
+                                        <div class="item">
+                                            <i class="eye icon"></i> 10086
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="right aligned five wide column">
+                                    <a href="#" target="_blank"
+                                        class="ui teal basic label m-padded-tiny m-text-thin">认知升级</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 图片 -->
+                        <div class="five wide column">
+                            <a href="#" target="_blank">
+                                <img src="../static/images/blog_imgs/cover/cutePig.jpg" alt="blog_picture"
+                                    class="ui rounded image">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- 底部分页 -->
+            <div class="ui bottom attached segment">
+                <div class="ui middle aligned two column grid">
+                    <div class="column">
+                        <a href="#" class="ui mini teal basic button">上一页</a>
+                    </div>
+                    <!-- right+aligned靠右 -->
+                    <div class="right aligned column">
+                        <a href="#" class="ui mini teal basic button">下一页</a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </main>
+    <!-- 底部footer -->
+    <footer class="ui inverted vertical segment m-padded-tb-massive">
+        <!-- 布局 -->
+        <div class="ui center aligned container">
+            <!-- 默认分成16份，divider表示加上分割线 -->
+            <div class="ui inverted divided stackable grid">
+                <!-- 占3份，填满，一列 -->
+                <div class="three wide column">
+                    <div class="ui inverted link list">
+                        <div class="item">
+                            <img src="./static/images/wechat.jpg" class="ui rounded image small" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="three wide column">
+                    <h4 class="ui inverted header m-opacity-mini m-text-spaced">最新博客</h4>
+                    <div class="ui inverted link list">
+                        <a href="#" class="item">用户故事</a>
+                        <a href="#" class="item">SpringBoot入门案例</a>
+                        <a href="#" class="item">Linux常用命令</a>
+                    </div>
+                </div>
+                <div class="three wide column">
+                    <h4 class="ui inverted header m-opacity-mini m-text-spaced">联系我</h4>
+                    <div class="ui inverted link list">
+                        <a href="#" class="item">QQ邮箱:3187336730@qq.com</a>
+                        <a href="#" class="item">微信:liurunheng233</a>
+                    </div>
+                </div>
+                <div class="seven wide column">
+                    <h4 class="ui inverted header m-opacity-mini m-text-spaced">slogan</h4>
+                    <div class="ui inverted link list">
+                        <p class="m-opacity-mini m-text-spaced m-text-thin">be better be betterbe betterbe betterbe
+                            betterbe betterbe betterbe betterbe better</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 分割线 -->
+            <div class="ui inverted section divider"></div>
+
+            <p class="m-opacity-tiny m-text-thin m-text-lined m-text-spaced">Copyright © 2022 - 2022 lrh</p>
+
+        </div>
+
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+</body>
+<script>
+    // 点击展开或收起菜单
+    $('.menu.toggle').click(function () {
+        $('.m-item').toggleClass('m-mobile-hide');
+    })
+
+</script>
+
+</html>
