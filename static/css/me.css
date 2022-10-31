@@ -175,6 +175,14 @@ body {
     display: inline-block;
 }
 
+/* ----------------position---------- */
+/* 粘性布局 */
+.m-sticky-top {
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 2;
+}
+
 /* ------container------------ */
 .m-container {
     max-width: 72em !important;
