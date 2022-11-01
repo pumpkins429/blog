@@ -183,6 +183,23 @@ body {
     z-index: 2;
 }
 
+.m-fixed {
+    position: fixed !important;
+    z-index: 1;
+}
+
+.m-right-bottom {
+    bottom: 10em !important;
+    right: 0 !important;
+}
+
+.m-right-top {
+    position: absolute !important;
+    top: 0 !important;
+    right: 0 !important;
+}
+
+
 /* ----------------z-index----------- */
 .m-z-index-1 {
     z-index: 1 !important;
@@ -213,12 +230,7 @@ body {
     width: 10em !important;
 }
 
-/* ------------position-------------- */
-.m-right-top {
-    position: absolute;
-    top: 0;
-    right: 0;
-}
+
 
 /* ------------mobile------------------ */
 .m-mobile-show {

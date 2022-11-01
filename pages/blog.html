@@ -10,6 +10,8 @@
         data-filtered="filtered">
     <link rel="stylesheet" href="../static/lib/typo/typo.css">
     <link rel="stylesheet" href="../static/lib/animate/animate.css">
+    <link rel="stylesheet" href="../static/lib/prism/prism.css">
+    <link rel="stylesheet" href="../static/lib/tocbot/tocbot.css">
     <link rel="stylesheet" href="../static/css/me.css">
 </head>
 
@@ -69,10 +71,15 @@
                 </div>
                 <!-- 博客标题，以及正文 -->
                 <h2 class="ui center aligned header">Typo.css</h2>
-                <div id="content" class="typo typo-selection m-padded-lr-responsive m-padded-tb-large ">
+
+                <div id="content" class="typo typo-selection js-toc-content m-padded-lr-responsive m-padded-tb-large ">
                     <h1>中文网页重设与排版：<i class="serif">Typo.css</i></h1><br />
 
-                    <h2 id="tagline" class="serif">一致化浏览器排版效果，构建最适合中文阅读的网页排版</h2>
+                    <pre><code class="language-css">p { color: red }</code></pre>
+                    <pre><code class="language-css">p { color: red }</code></pre>
+
+
+                    <p id="tagline" class="serif">一致化浏览器排版效果，构建最适合中文阅读的网页排版</p>
 
                     <ol id="table">
                         <li><a href="#section1">关于 <i class="serif">Typo.css</i></a></li>
@@ -93,7 +100,7 @@
                     <h2 id="section1">一、关于 <i class="serif">Typo.css</i></h2>
 
                     <p><i class="serif">Typo.css</i> 的目的是，在一致化浏览器排版效果的同时，构建最适合中文阅读的网页排版。</p>
-                    <h4>现状和如何去做：</h4>
+                    <h3>现状和如何去做：</h3>
 
                     <p class="typo-first">排版是一个麻烦的问题 <sup><a href="#appendix1">#
                                 附录一</a></sup>，需要精心设计，而这个设计却是常被视觉设计师所忽略的。前端工程师更常看到这样的问题，但不便变更。因为在多个 OS
@@ -164,7 +171,7 @@
                         </tbody>
                     </table>
 
-                    <h4>中文排版的重点和难点</h4>
+                    <h3>中文排版的重点和难点</h3>
 
                     <p>在中文排版中，HTML4 的很多标准在语义在都有照顾到。但从视觉效果上，却很难利用单独的 CSS 来实现，像<abbr title="在文字下多加一个点">着重号</abbr>（例：这里<em
                             class="typo-em">强调一下</em>）。在 HTML4 中，专名号标签（<code>&lt;u&gt;</code>）已经被放弃，而
@@ -309,7 +316,7 @@
                         will works nice as the
                         demo you're watching now. The following code is the best way to render typo in Chinese:
                     </p>
-                    <pre>
+                    <pre><code class="language-css">
 /* 标题应该更贴紧内容，并与其他块区分，margin 值要相应做优化 */
 h1,h2,h3,h4,h5,h6 {
     line-height:1;font-family:Arial,sans-serif;margin:1.4em 0 0.8em;
@@ -324,11 +331,11 @@ h5,h6{font-size:1em;}
 .typo p, .typo pre, .typo ul, .typo ol, .typo dl, .typo form, .typo hr {
     margin:1em 0 0.6em;
 }
-</pre>
+</code></pre>
 
-                    <h3 id="section3">三、附录</h3>
+                    <h2 id="section3">三、附录</h2>
 
-                    <h5 id="appendix1">1、<i class="serif">Typo.css</i> 排版偏重点</h5>
+                    <h3 id="appendix1">1、<i class="serif">Typo.css</i> 排版偏重点</h3>
                     <table class="ui table" summary="Typo.css 排版偏重点">
                         <thead>
                             <tr>
@@ -479,7 +486,7 @@ h5,h6{font-size:1em;}
                         </tbody>
                     </table>
 
-                    <h5 id="appendix2">2、开源许可</h5>
+                    <h3 id="appendix2">2、开源许可</h3>
 
                     <p><i class="serif">Typo.css</i> 基于 <a href="//zh.wikipedia.org/wiki/MIT_License">MIT License</a>
                         开源，使用代码只需说明来源，或者引用 <a href="//typo.sofi.sh/license.txt">license.txt</a> 即可。</p>
@@ -526,7 +533,7 @@ h5,h6{font-size:1em;}
                 </div>
             </div>
             <!-- 留言区域，加bottom有圆角 -->
-            <div class="ui bottom attached segment">
+            <div id="comments-container" class="ui bottom attached segment">
                 <!-- 留言区列表 -->
                 <div class="ui teal segment">
                     <div class="ui comments">
@@ -641,6 +648,26 @@ h5,h6{font-size:1em;}
             </div>
         </div>
     </main>
+
+    <!-- 侧边栏小工具， 加上vertical垂直 -->
+    <div class="m-padded m-fixed m-right-bottom">
+        <div class="ui vertical icon buttons">
+            <!-- 显示目录 -->
+            <button type="button" class="ui catalog teal button">目录</button>
+            <!-- 跳转到留言区 -->
+            <a href="#comments-container" class="ui teal button">留言</a>
+            <!-- 微信二维码 -->
+            <button class="ui icon button"><i class="weixin icon"></i></button>
+            <!-- 返回顶部 -->
+            <a href="#" class="ui icon button"><i class="chevron up icon"></i></a>
+        </div>
+    </div>
+    <!-- 目录弹窗 -->
+    <div class="ui catalog-container flowing popup transition hidden" style="width:250px !important">
+        <ol class="js-toc">
+            <!-- 目录生成区域 -->
+        </ol>
+    </div>
     <!-- 底部footer -->
     <footer class="ui inverted vertical segment m-padded-tb-massive">
         <!-- 布局 -->
@@ -651,7 +678,7 @@ h5,h6{font-size:1em;}
                 <div class="three wide column">
                     <div class="ui inverted link list">
                         <div class="item">
-                            <img src="./static/images/wechat.jpg" class="ui rounded image small" alt="">
+                            <img src="../static/images/wechat.jpg" class="ui rounded image small" alt="">
                         </div>
                     </div>
                 </div>
@@ -691,6 +718,8 @@ h5,h6{font-size:1em;}
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+    <script src="../static/lib/prism/prism.js"></script>
+    <script src="../static/lib/tocbot/tocbot.js"></script>
 </body>
 <script>
     // 点击展开或收起菜单
@@ -703,6 +732,25 @@ h5,h6{font-size:1em;}
         popup: $('.payQR.popup'),
         on: 'click',
         position: 'top center'
+    });
+
+    //目录，点击跳出弹窗
+    $('.catalog.button').popup({
+        popup: $('.catalog-container.popup'),
+        on: 'click',
+        position: 'left center'
+    });
+
+    //初始化目录
+    tocbot.init({
+        // Where to render the table of contents.
+        tocSelector: '.js-toc',
+        // Where to grab the headings to build the table of contents.
+        contentSelector: '.js-toc-content',
+        // Which headings to grab inside of the contentSelector element.
+        headingSelector: 'h1, h2, h3, h4',
+        // For headings inside relative or absolute positioned containers within content.
+        hasInnerContainers: true,
     });
 </script>
 
