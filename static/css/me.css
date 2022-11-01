@@ -255,3 +255,10 @@ body {
         width: 100% !important;
     }
 }
+
+/* --------------------bug修复 */
+/* 点开markdown编辑器添加图片时显示的表单异常，因为里面input标签受semanticUI影响，宽度width变成100% */
+.editormd-form input[type=text] {
+    display: inline-block !important;
+    width: 264px !important;
+}
